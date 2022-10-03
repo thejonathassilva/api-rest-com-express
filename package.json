@@ -2,9 +2,11 @@
   "name": "expressbasico",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/thejonathassilva/api-rest-com-express/issues"
   },
-  "homepage": "https://github.com/thejonathassilva/api-rest-com-express#readme"
+  "homepage": "https://github.com/thejonathassilva/api-rest-com-express#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.17.3",
+    "mongodb-uri": "^0.9.7",
+    "mongoose": "^6.2.6"
+  }
 }
